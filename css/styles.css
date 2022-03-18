@@ -9,7 +9,7 @@
 body {
 
     background-color:rgb(31, 31, 31);
-
+    overflow-x: hidden;
 }
 
 .top-header{
@@ -227,36 +227,53 @@ body {
 .carousel {
 
     width: 100%;
-    overflow: scroll;
     padding: 0px 50px;
     position: relative;
-
+    overflow-y: hidden;
+    
 }
 
 .carousel-title {
-
+    
     color: white;
     display: flex;
     align-items: center;
-
+    padding: 0px 50px;
+    
 }
 
 .carousel-title p {
-
+    
     margin-left: 20px;
-
+    
 }
 
 .carousel__container {
-
+    
     white-space: nowrap;
-    margin: 70px 0px;
-    padding: 0px 0px 10px 0px;
+    margin: 10px 0px 50px 0px;
+    padding: 70px 0px;
+    overflow-x: scroll;
+    
+}
+
+.carousel__container::-webkit-scrollbar{
+    
+    height: 5px;
+    background: none;
+    
+}
+
+.carousel__container::-webkit-scrollbar-thumb{
+    
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0px 50px;
+    border-radius: 20px;
 
 }
 
 .carousel-item {
-
+    
     width: 200px;
     height: 250px;
     border-radius: 20px;
